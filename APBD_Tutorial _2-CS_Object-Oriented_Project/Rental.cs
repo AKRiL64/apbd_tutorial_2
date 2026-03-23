@@ -15,7 +15,7 @@ public class Rental {
         EndDate = StartDate.AddDays(days);
     }
     
-    public bool isActive() {
+    public bool IsActive() {
         return ReturnDate == null;
     }
     

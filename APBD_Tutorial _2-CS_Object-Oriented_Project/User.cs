@@ -1,6 +1,6 @@
 ﻿namespace APBD_Tutorial__2_CS_Object_Oriented_Project;
 
-public abstract class User {
+public abstract class User: IRentalHolder {
     private static int _id = 1;
 
     public int Id { get; }
@@ -13,4 +13,6 @@ public abstract class User {
         FirstName = firstName;
         LastName = lastName;
     }
+
+    public abstract int GetMaxActiveRentals();
 }
