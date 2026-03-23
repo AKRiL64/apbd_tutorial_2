@@ -24,11 +24,15 @@ public class RentalService {
         if (activeRentals >= user.GetMaxActiveRentals())
             throw new InvalidOperationException("Rental limit exceeded");
 
-        device.SetAvailable();
+        device.SetUnavailable();
 
         var rental = new Rental(user, device, days);
         rentals.Add(rental);
 
         return rental;
+    }
+    
+    public List<Rental> GetRentals() {
+        return rentals;
     }
 }
