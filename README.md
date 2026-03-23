@@ -3,3 +3,5 @@ while sharing common logic. DeviceService and UserService focus only on their re
 as a controller to handle the interaction between them and its collection of Rental's
 Rental manages only its own state and penalty logic
 Coupling is achieved in RentalService by using Dependency Injection
+
+Sample code for test is in Program.Main()
